@@ -14,7 +14,7 @@ public class Producto {
 	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int id;
+	private int id = 0;
 	private String nombre;
 	private String descripcion;
 	private String imagen;

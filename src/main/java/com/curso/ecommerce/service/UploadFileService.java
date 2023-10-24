@@ -27,6 +27,7 @@ public class UploadFileService {
 		
 		
 		public void deleteImage(String nombre) {
+			System.out.println("nombre===>"+nombre);
 			File file = new File(folder+nombre);
 			file.delete();
 			

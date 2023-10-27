@@ -130,6 +130,12 @@ public class HomeController {
 		
 	}
 	
+	@GetMapping("/order")
+	public String order() {
+		
+		return "usuario/resumenorden";
+	}
+	
 	
 	
 	

@@ -16,15 +16,17 @@ public class UsuarioServiceImpl implements IUsuarioService{
 
 	@Override
 	public Optional<Usuario> findById(Integer id) {
-		
 		return usuarioRepository.findById(id);
 	}
 
 	@Override
 	public Usuario save(Usuario usuario) {
-		// TODO Auto-generated method stub
-		
 		return usuarioRepository.save(usuario);
+	}
+
+	@Override
+	public Optional<Usuario> findByEmail(String email) {
+		return usuarioRepository.findByEmail(email);
 	}
 	
 	

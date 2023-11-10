@@ -59,6 +59,8 @@ public class UsuarioController {
 			session.setAttribute("idusuario", user.get().getId());
 			if(user.get().getTipo().equals("ADMIN")) {
 				return "redirect:/administrador";
+			}else {
+				return "redirect:/";
 			}
 		}else {
 			logger.info("Usuaro no existe");

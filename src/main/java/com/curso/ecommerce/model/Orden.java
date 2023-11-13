@@ -17,7 +17,7 @@ public class Orden {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private int ID;
+	private int Id;
 	private String numero;
 	private Date fechaCreacion;
 	private Date fecharecibida;
@@ -35,19 +35,19 @@ public class Orden {
 
 	public Orden(int iD, String numero, Date fechaCreacion, Date fecharecibida, double total) {
 		super();
-		ID = iD;
+		Id = iD;
 		this.numero = numero;
 		this.fechaCreacion = fechaCreacion;
 		this.fecharecibida = fecharecibida;
 		this.total = total;
 	}
 
-	public int getID() {
-		return ID;
+	public int getId() {
+		return Id;
 	}
 
 	public void setID(int iD) {
-		ID = iD;
+		Id = iD;
 	}
 
 	public String getNumero() {
@@ -103,7 +103,7 @@ public class Orden {
 
 	@Override
 	public String toString() {
-		return "Orden [ID=" + ID + ", numero=" + numero + ", fechaCreacion=" + fechaCreacion + ", fecharecibida="
+		return "Orden [ID=" + Id + ", numero=" + numero + ", fechaCreacion=" + fechaCreacion + ", fecharecibida="
 				+ fecharecibida + ", total=" + total + "]";
 	}
 	
